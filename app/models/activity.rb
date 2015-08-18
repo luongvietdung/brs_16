@@ -6,6 +6,8 @@ class Activity < ActiveRecord::Base
 
   before_create :create_target_name
 
+  scope :latest, ->{order created_at: :desc}
+
   private
   def find_target
     case action_type

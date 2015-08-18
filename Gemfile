@@ -40,6 +40,7 @@ gem "whenever", require: false
 gem "sidekiq"
 gem "figaro"
 gem "nprogress-rails"
+gem "shoulda-callback-matchers"
 
 # Use ActiveModel has_secure_password
 # gem "bcrypt", "~> 3.1.7"
@@ -62,6 +63,9 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem "spring"
+  gem "rspec-rails"
+  gem "factory_girl_rails"
+  gem "rspec-collection_matchers"
 end
 
 group :production do
